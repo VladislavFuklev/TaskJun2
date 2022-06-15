@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+@mixin hover {
+    &:hover {
+        background-color: rgb(221, 220, 220);
+        cursor: pointer;
+    }
+}
+
+.container-sm {
+    max-width: 1000px;
+}
+
+.navbar-brand-text {
+    font-size: 12px;
+    color: gray;
+}
+
+.navbar-close {
+    border-left: 1px solid rgb(210, 210, 210);
+    padding: 10px;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.left-block {
+    width: 315px;
+    height: 140px;
+    transition: 0.5s;
+    @include hover
+}
+
+.bg{
+background-color: #E1E6E9;
+}
+
+
+.payments-form{
+    background-color: #fff;
+    width: 50%;
+    transition: 0.5s;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background-color: #15B22F;
+        color: white;
+    }
+}
+
+.breadcrumb-item{
+    font-size: 12px;
+}
+
+.payments-block{
+    background-color: #fff;
+    transition: 0.5s;
+    @include hover
+    
+}
+
+.block-cart {
+    font-size: 12px;
+    color: gray;
+}
+
+.btn::before {
+    content: '<';
+    padding-right: 30px;
+    font-size: 20px;
+}
